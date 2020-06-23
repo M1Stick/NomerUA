@@ -1,18 +1,275 @@
-body {
-    display: flex;
-    font-size: 20px;
-}
+//--Подключение файлов--
+@import "vars";
+@import "null";
+@import "libs";
+@import "fonts";
+@import "mixins";
+// --
 
-span {
-    font-size: 15px;
-    @media (max-width: 767px) {
-        font-size: 12px;
+// ==Стили==
+
+// --Разметка--
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+.container {
+    max-width: 1430px;
+    min-width: $minwidth;
+    padding: 0px 15px;
+    margin: 0 auto;
+    z-index: 2;
+}
+.flex__content {
+    flex: 1 1 100%;
+}
+.flex-col-2 {
+    flex: 0 0 50%;
+}
+.flex-col-3 {
+    flex: 0 0 33.3333%;
+}
+.flex-col-4 {
+    flex: 0 0 25%;
+}
+//--
+
+// --Основные стили--
+.header {
+    max-width: 100%;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-}
+    &__logo{
+        padding: 25px 0;
+        &-link{
+            display: block;
+        }
+        &-img{
+            width: 142px;
+            height: 46px;
+        }
+    }
+    &__connect{
 
-div {
-    font-size: 30px;
-    @media (max-width: 767px) {
+    }
+    &__tel{
+        font-family: $firasansb;
         font-size: 20px;
+        line-height: 28px;
+        font-weight: 800;
+        color: $black;
+        opacity: 0.5;
+        margin-right: 38px;
+        &:hover{
+            opacity: 1;
+            transition: 0.5s ease;
+        }
+    }
+    &__order{
+        font-family: $firasansb;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 800;
+        color: $black;
+        border: 2.0px solid $red;
+        border-radius: 30px;
+        padding: 15px 80px;
+        opacity: 0.5;
+        &:hover{
+            opacity: 1;
+            transition: 0.5s ease;
+        }
     }
 }
+
+.nav {
+    background: url(../img/car_1.jpg);
+    &__row{
+        display: flex;
+    }
+    &__content{
+        flex: 0 0 60%;
+    }
+    &__order{
+        flex: 0 0 40%;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 175px 105px;
+        &-name{
+            font-family: $firasansb;
+            font-size: 24px;
+            line-height: 80px;
+            font-weight: 800;
+            letter-spacing: 0.025em;
+            color: #ffffff;
+        }
+        &-phone{
+            font-family: $firasansb;
+            font-size: 24px;
+            line-height: 80px;
+            font-weight: 800;
+            letter-spacing: 0.025em;
+            color: #ffffff;
+        }
+        &-numbers{
+            font-family: $firasansb;
+            font-size: 24px;
+            line-height: 80px;
+            font-weight: 800;
+            letter-spacing: 0.025em;
+            color: #ffffff;
+        }
+    }
+    &__input{
+        display: block;
+        width: 400px;
+        font-family: $mullerm;
+        font-size: 18px;
+        line-height: 80px;
+        font-weight: 400;
+        color: $black; 
+        padding-left: 30px;
+        &-btn{
+            width: 250px;
+            font-family: $firasansb;
+            font-size: 24px;
+            line-height: 90px;
+            font-weight: 800;
+            color: #ffffff;
+            background-color: $red;
+            margin-top: 60px;
+            padding: 0 75px;
+            &:hover{
+                box-shadow: 0px 18px 25px 3px rgba(255,33,59,0.25);
+                transition: 0.5s ease;
+                cursor: pointer;
+            }
+        }
+    }
+.navbar {
+    &__list{
+        display: flex;
+    }
+
+    &__item{
+        text-align: center;
+        padding-top: 50px;
+        &-link{
+            font-family: $firasansb;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            padding: 50px 30px;
+            color: $black;
+            &:hover{
+                color: #ffffff;
+                background-color: $red;
+                transition: 0.3s ease;
+            }
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 140px;
+        & h1{
+            font-family: $firasansb;
+            font-size: 80px;
+            line-height: 90px;
+            font-weight: 900;
+            color: $black;
+            & span{
+                font-family: $firasansb;
+                font-size: 80px;
+                line-height: 90px;
+                font-weight: 900;   
+                color: $red;
+            }
+        }
+        & p{   
+            font-family: $mullerm;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+            color: $black;
+        }
+    }
+    }
+}
+
+.advantages{
+    display: flex;
+    &__row{
+        
+    }
+    &__heading{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    &__body{
+        display: flex;
+        flex: 0 0 50%;
+    }
+    &__head{
+        padding-top: 150px;
+        padding-bottom: 60px;
+        font-family: $firasansb;
+        font-size: 50px;
+        line-height: 28px;
+        font-weight: 900;
+        letter-spacing: 0.01em;
+        color: $black;
+    }
+    &__content{
+        padding-left: 95px;
+    }
+    &__item{
+        display: flex;
+        & span{
+            background: url(../img/02.svg);
+            color: $red;
+        }
+        &-img{
+            width: 54px;
+            height: 54px;
+            color: $red;
+        }
+        &-content{
+            & h3{
+                font-family: $firasansb;
+                font-size: 30px;
+                line-height: 28px;
+                font-weight: 900;
+                letter-spacing: 0.01em;
+                color: $black;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 98px;
+                    height: 10px;
+                    background-color: $red;
+                }
+            }
+            & p{
+                font-family: $mullerm;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 300;
+                color: $lightgray;
+            }
+        }
+    }
+}
+//--
+
+@import "media";
