@@ -3,7 +3,6 @@
 @import "null";
 @import "libs";
 @import "fonts";
-@import "mixins";
 // --
 
 // ==Стили==
@@ -94,12 +93,13 @@
         flex: 0 0 60%;
     }
     &__order{
-        flex: 0 0 40%;
+        flex: 0 0 100%;
     }
     &__form{
         display: flex;
         flex-direction: column;
         justify-content: start;
+        background-color: $background;
         padding: 175px 105px;
         &-name{
             font-family: $firasansb;
@@ -419,6 +419,98 @@
             }
         }
     }
+}
+// --Ванильные настройки слайдера--
+.slick-slider{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+}
+.slick-list{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-track{
+    display: flex;
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+}
+.flex-column{
+    min-width: 0;
+}
+//
+.reviews{
+    position: relative;
+    padding: 0 50px;
+    z-index: 1;
+    &__row{
+
+    }
+    &__heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &-head{
+            font-family: $firasansb;
+            font-size: 50px;
+            line-height: 68px;
+            font-weight: 900;
+            letter-spacing: 0.01em;
+            color: $black;
+        }
+    }
+    &__slider{
+        position: relative;
+        padding-left: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        & .slick-arrow{
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            font-size: 0;
+            width: 15px;
+            height: 25px;
+        }
+        & .slick-arrow.slick-prev{
+            left: 0;
+            background: url(../img/arrow_left.png) 0 0 no-repeat;
+            &::before{
+                display: none;
+            }
+        }
+        & .slick-arrow.slick-next{
+            right: 0;
+            background: url(../img/arrow_right.png) 0 0 no-repeat;
+            &::before{
+                display: none;
+            }
+        }
+        &-item{
+        }
+        &-img{
+            max-width: 100%;
+        }
+    }
+        
 }
 //--
 
