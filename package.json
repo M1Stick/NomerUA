@@ -33,6 +33,7 @@
   "dependencies": {
     "gulp-clean-css": "^4.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
+    "jquery": "^3.5.1",
     "owl.carousel": "^2.3.4"
   }
 }

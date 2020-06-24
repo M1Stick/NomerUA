@@ -79,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div class="advantages">
+        <div class="advantages flex-col-2">
             <div class="container">
                 <div class="advantages__row">
                     <div class="advantages__heading">
@@ -93,8 +93,8 @@
                             <div class="advantages__item">
                                 <img class="advantages__item-img" src="./img/01.svg" alt="advantages icon">
                                 <div class="advantages__item-content">
-                                    <h3>Lorem Ipsum</h3>
-                                    <p>
+                                    <h3 class="advantages__item-first-head">Lorem Ipsum</h3>
+                                    <p class="advantages__item-first-info">
                                         Lorem ipsum dolor sit amet, consectetur<br> 
                                         adipiscing elit, sed do eiusmod tempor incid-<br>
                                         idunt ut labore et dolore magna aliqua. Quis
@@ -102,12 +102,10 @@
                                 </div>
                             </div>
                             <div class="advantages__item">
-                                <span>
-                                    
-                                </span>
+                                    <img class="advantages__item-img" src="./img/02.svg" alt="advantages icon">
                                 <div class="advantages__item-content">
-                                    <h3>Lorem Ipsum</h3>
-                                    <p>
+                                    <h3 class="advantages__item-second-head">Lorem Ipsum</h3>
+                                    <p class="advantages__item-second-info">
                                         Lorem ipsum dolor sit amet, consectetur adipisc- 
                                     </p>
                                 </div>
@@ -115,8 +113,8 @@
                             <div class="advantages__item">
                                 <img class="advantages__item-img" src="./img/03.svg" alt="advantages icon">
                                 <div class="advantages__item-content">
-                                    <h3>Lorem Ipsum</h3>
-                                    <p>
+                                    <h3 class="advantages__item-third-head">Lorem Ipsum</h3>
+                                    <p class="advantages__item-third-info">
                                         Lorem ipsum dolor sit amet, consectetur<br>
                                         adipiscing elit, sed do eiusmod tempor incidi-
                                     </p>
@@ -127,71 +125,90 @@
                 </div>
             </div>
         </div>
-        <div class="price">
+        <div class="price flex-col-2">
             <div class="container">
                 <div class="price__row">
-                    <div class="price__content">
-                        <div class="price__content-head">
-                            <h2>Lorem Ipsum</h2>
-                        </div>
-                        <div class="price__content-info">
-                            <div class="price__content-item">
-                                <img class="price__content-img" src="" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur<br>
-                                adipiscing elit, sed do eiusmod tempor</p>
-                            <div class="price__content-item">
-                                <img class="price__content-img" src="" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur<br>
-                                adipiscing elit, sed do eiusmod tempor</p>
-                            </div>
-                            <div class="price__content-item">
-                                <img class="price__content-img" src="" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur</p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="price__content-discount">
-                            <p class="oldprice">399 грн</p>
-                            <p class="newprice">299 грн</p>
-                            <a class="price__content-order" href="">Заказать</a>
-                        </div>     
+                    <div class="price__head">
+                        <h1 class="price__head-content">Стоимость</h1>
                     </div>
-                    <div class="price__content">
-                        <div class="price__content-head">
-                            <h2>Lorem Ipsum</h2>
-                        </div>
-                        <div class="price__content-info">
-                            <div class="price__content-item">
-                                <img class="price__content-img" src="" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur<br>
-                                adipiscing elit, sed do eiusmod tempor</p>
+                    <div class="price__body">
+                        <div class="price__content">
+                            <div class="price__content-head">
+                                <h2>Lorem Ipsum</h2>
                             </div>
-                            <div class="price__content-item">
-                                <img class="price__content-img" src="" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur<br>
-                                adipiscing elit, sed do eiusmod tempor</p>
-                            </div>
-                            <div class="price__content-item">
-                                <img class="price__content-img" src="" alt="">
-                                <p>Lorem ipsum dolor sit amet, consectetur<br> 
-                                adipiscing elit, sed do eiusmod tempor incidi-</p>
-                            </div>
+                            <div class="price__content-info">
+                                <div class="price__content-item">
+                                    <img class="price__content-img" src="./img/complete.svg" alt="complete svg">
+                                    <p>Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                                <div class="price__content-item">
+                                    <img class="price__content-img" src="./img/complete.svg" alt="complete svg">
+                                    <p>Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                                <div class="price__content-item">
+                                    <img class="price__content-img" src="./img/complete.svg" alt="complete svg">
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                </div>
+                            </div> 
+                            <div class="price__content-line"></div>
                             <div class="price__content-discount">
-                                <p class="oldprice">599 грн</p>
-                                <p class="newprice">499 грн</p>
-                                <a class="price__content-order" href="">Заказать</a>
+                                    <p class="price__content-oldprice">399 грн</p>
+                                    <p class="price__content-newprice">299 <span>грн</span></p>
+                                    <div class="price__content-btn">
+                                        <a class="price__content-order" href="">Заказать</a>
+                                    </div>   
+                            </div> 
+                        </div>
+                        <div class="price__content">
+                            <div class="price__content-head">
+                                <h2>Lorem Ipsum</h2>
+                            </div>
+                            <div class="price__content-info">
+                                <div class="price__content-item">
+                                    <img class="price__content-img" src="./img/complete.svg" alt="complete svg">
+                                    <p>Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                                <div class="price__content-item">
+                                    <img class="price__content-img" src="./img/complete.svg" alt="complete svg">
+                                    <p>Lorem ipsum dolor sit amet, consectetur<br>
+                                    adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                                <div class="price__content-item">
+                                    <img class="price__content-img" src="./img/complete.svg" alt="complete svg">
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                </div>
+                            </div> 
+                            <div class="price__content-line"></div>
+                            <div class="price__content-discount">
+                                <p class="price__content-oldprice">599 грн</p>
+                                <p class="price__content-newprice">499 <span>грн</span></p>
+                                <div class="price__content-btn">
+                                    <a class="price__content-order" href="">Заказать</a>
+                                </div>   
                             </div> 
                         </div>
                     </div>
-                    <div class="additionally">
+                    <div class="price__additionally">
                         <p><span>*</span> Lorem ipsum dolor sit amet</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="reviews">
-
+        <div class="reviews flex-content">
+            <div class="container">
+                <div class="reviews__row">
+                    <div class="reviews__heading">
+                        <h1 class="reviews__heading-head">
+                            Отзывы
+                        </h1>
+                    </div>
+                </div>
+            </div>
         </div>
-    <script src="js/scripts.js"></script>
+</div>
+<script src="js/scripts.js"></script>
 </body>
 </html>
