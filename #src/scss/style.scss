@@ -457,6 +457,7 @@
 .reviews{
     position: relative;
     padding: 0 50px;
+    padding-bottom: 150px;
     z-index: 1;
     &__row{
 
@@ -511,6 +512,40 @@
         }
     }
         
+}
+.footer{
+    background-color: $grayblue;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0px;
+    }
+    &__logo{
+        &-link{
+            display: block;
+        }
+        &-img{
+
+        }
+    }
+    &__anchor{
+        &-link{
+            font-family: $firasans;
+            font-size: 24px;
+            line-height: 39px;
+            font-weight: 400;
+            color: #ffffff;
+            & span{
+                &::before{
+                    content: '';
+                    width: 17px;
+                    height: 24px;
+                    background: url(../img/arrow_up.svg);
+                }       
+            }
+        }
+    }
 }
 //--
 

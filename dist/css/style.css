@@ -1189,6 +1189,7 @@ template {
 .reviews {
   position: relative;
   padding: 0 50px;
+  padding-bottom: 150px;
   z-index: 1;
 }
 
@@ -1258,4 +1259,40 @@ template {
 
 .reviews__slider-img {
   max-width: 100%;
+}
+
+.footer {
+  background-color: #172c42;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0px;
+}
+
+.footer__logo-link {
+  display: block;
+}
+
+.footer__anchor-link {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 24px;
+  line-height: 39px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.footer__anchor-link span::before {
+  content: '';
+  width: 17px;
+  height: 24px;
+  background: url(../img/arrow_up.svg);
 }
