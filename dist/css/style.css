@@ -625,24 +625,28 @@ template {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
+  min-width: 0;
 }
 
 .flex-col-2 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
+  min-width: 0;
 }
 
 .flex-col-3 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.3333%;
           flex: 0 0 33.3333%;
+  min-width: 0;
 }
 
 .flex-col-4 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
+  min-width: 0;
 }
 
 .header {
@@ -670,6 +674,7 @@ template {
 }
 
 .header__logo-img {
+  max-width: 100%;
   width: 142px;
   height: 46px;
 }
@@ -711,7 +716,7 @@ template {
 }
 
 .nav {
-  background: url(../img/car_1.jpg);
+  background: url(../img/car_1.jpg) no-repeat;
 }
 
 .nav__row {
@@ -744,7 +749,7 @@ template {
       -ms-flex-pack: start;
           justify-content: start;
   background-color: rgba(23, 44, 66, 0.7);
-  padding: 175px 105px;
+  padding: 160px 105px;
 }
 
 .nav__form-name {
@@ -887,6 +892,10 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.advantages__img {
+  max-width: 100%;
 }
 
 .advantages__body {
@@ -1282,17 +1291,37 @@ template {
   display: block;
 }
 
+.footer__anchor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
 .footer__anchor-link {
   font-family: "Fira Sans", sans-serif;
   font-size: 24px;
   line-height: 39px;
   font-weight: 400;
   color: #ffffff;
+  padding-right: 25px;
 }
 
-.footer__anchor-link span::before {
-  content: '';
+.footer__anchor-link img {
   width: 17px;
   height: 24px;
-  background: url(../img/arrow_up.svg);
+  color: #ffffff;
+  margin-left: 25px;
+}
+
+@media (min-width: 1299.98px) {
+  .navbar__content p {
+    font-size: 15px;
+  }
 }

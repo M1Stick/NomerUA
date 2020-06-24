@@ -21,15 +21,19 @@
 }
 .flex__content {
     flex: 1 1 100%;
+    min-width: 0;
 }
 .flex-col-2 {
     flex: 0 0 50%;
+    min-width: 0;
 }
 .flex-col-3 {
     flex: 0 0 33.3333%;
+    min-width: 0;
 }
 .flex-col-4 {
     flex: 0 0 25%;
+    min-width: 0;
 }
 //--
 
@@ -47,6 +51,7 @@
             display: block;
         }
         &-img{
+            max-width: 100%;
             width: 142px;
             height: 46px;
         }
@@ -85,7 +90,7 @@
 }
 
 .nav {
-    background: url(../img/car_1.jpg);
+    background: url(../img/car_1.jpg) no-repeat;
     &__row{
         display: flex;
     }
@@ -100,7 +105,7 @@
         flex-direction: column;
         justify-content: start;
         background-color: $background;
-        padding: 175px 105px;
+        padding: 160px 105px;
         &-name{
             font-family: $firasansb;
             font-size: 24px;
@@ -215,6 +220,9 @@
         justify-content: center;
         text-align: center;
         align-items: center;
+    }
+    &__img{
+        max-width: 100%;
     }
     &__body{
         display: flex;
@@ -530,19 +538,22 @@
         }
     }
     &__anchor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         &-link{
             font-family: $firasans;
             font-size: 24px;
             line-height: 39px;
             font-weight: 400;
             color: #ffffff;
-            & span{
-                &::before{
-                    content: '';
-                    width: 17px;
-                    height: 24px;
-                    background: url(../img/arrow_up.svg);
-                }       
+            padding-right: 25px;
+            & img{
+                width: 17px;
+                height: 24px;
+                color: #ffffff; 
+                margin-left: 25px;
             }
         }
     }
