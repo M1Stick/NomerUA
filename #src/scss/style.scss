@@ -44,6 +44,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        z-index: 2;
     }
     &__logo{
         padding: 25px 0;
@@ -55,9 +57,6 @@
             width: 142px;
             height: 46px;
         }
-    }
-    &__connect{
-
     }
     &__tel{
         font-family: $firasansb;
@@ -86,6 +85,12 @@
             opacity: 1;
             transition: 0.5s ease;
         }
+    }
+    &__menu{
+        display: none;
+    }
+    &__burger{
+        display: none;
     }
 }
 
@@ -149,7 +154,6 @@
             color: #ffffff;
             background-color: $red;
             margin-top: 60px;
-            padding: 0 75px;
             &:hover{
                 box-shadow: 0px 18px 25px 3px rgba(255,33,59,0.25);
                 transition: 0.5s ease;
@@ -185,7 +189,7 @@
         display: flex;
         flex-direction: column;
         padding-top: 140px;
-        & h1{
+        &-heading{
             font-family: $firasansb;
             font-size: 80px;
             line-height: 90px;
@@ -199,7 +203,7 @@
                 color: $red;
             }
         }
-        & p{   
+        &-info{   
             font-family: $mullerm;
             font-size: 24px;
             line-height: 32px;
@@ -243,11 +247,18 @@
     }
     &__item{
         display: flex;
+        
         &-img{
             width: 54px;
             height: 54px;
             color: $red;
             margin-right: 30px; 
+        }
+        &-line{
+            width: 98px;
+            height: 10px;
+            background-color: #ff213b;
+            margin-bottom: 20px;
         }
         &-content{
             & h3{
@@ -257,15 +268,9 @@
                 font-weight: 900;
                 letter-spacing: 0.01em;
                 color: $black;
-                padding-bottom: 50px;
-                &::before{
-                    content: '';
-                    position: absolute;
-                    width: 98px;
-                    height: 10px;
-                    background-color: $red;
-                }
+                padding-bottom: 20px;
             }
+ 
             & p{
                 font-family: $mullerl;
                 font-size: 16px;
@@ -274,29 +279,8 @@
                 color: $lightgray;
             }
         }
-        &-first-head{
-            &::before{
-                top: 47.5em;
-            }
-        }
-        &-second-head{
-            &::before{
-                top: 56em;
-            }
-        }
-        &-third-head{
-            &::before{
-                top: 63em;
-            }
-        }
-        &-first-info{
-            padding-bottom: 100px;
-        }
-        &-second-info{
-            padding-bottom: 110px;
-        }
-        &-third-info{
-            
+        &-info{
+            padding-bottom: 60px;
         }
     }
 }
@@ -327,8 +311,12 @@
         margin: 25px;
         box-shadow: 0px 0px 56px 4px rgba(0,0,0,0.07);
         background-color: #ffffff;
+        width: 450px;
         &-head{
             background-color: $grayblue;
+            display: flex;
+            justify-content: center;
+            text-align: center;
             & h2 {
                 font-family: $firasansb;
                 font-size: 30px;
@@ -336,7 +324,7 @@
                 font-weight: 900;
                 letter-spacing: 0.01em;
                 color: #ffffff;
-                padding: 30px 135px;
+                padding: 30px 0;
             }
         }
         &-info{
@@ -464,7 +452,6 @@
 //
 .reviews{
     position: relative;
-    padding: 0 50px;
     padding-bottom: 150px;
     z-index: 1;
     &__row{
@@ -486,7 +473,6 @@
     }
     &__slider{
         position: relative;
-        padding-left: 40px;
         display: flex;
         justify-content: center;
         align-items: center;

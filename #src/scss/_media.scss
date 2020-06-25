@@ -1,26 +1,299 @@
-@media (min-width: 1299.98px) { 
+@media (max-width: 1366px) { 
     .navbar{
         &__content{
-            & p{
-                font-size: 15px;
+            &-heading{
+                font-size: 60px !important;
+                & span{
+                    font-size: 60px !important; 
+                }
+            }
+            &-info{
+                font-size: 20px !important;
             }
         }
     }
 }
 
-@media (max-width: 1199.98px) { 
+@media (max-width: 1280px){
+    .nav{
+        &__form{
+            padding: 160px 65px;
+        }
+    }
+}
 
+@media (max-width: 1200px){
+    .nav{
+        &__form{
+            padding: 160px 45px;
+        }
+    }
+}
+
+
+@media (max-width: 1152px) { 
+    .nav{
+        &__form{
+            padding: 160px 25px;
+        }
+    }
+
+    .navbar{
+        &__item{
+            &-link{
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+.header{
+    &__tel{
+            display: none;
+        }
+    &__order{
+            display: none;
+        }
+    &__menu{
+            
+    }
+    &__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        & span{
+            background-color: $red;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            left: 0;
+            top: 8px;
+        }
+        &::before,&::after{
+            content: '';
+            background-color: $red;
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            left: 0;
+        }
+        &::before{
+            top: 0;
+        }
+        &::after{
+            bottom: 0;
+        }
+    }
+}
+.nav{
+    &__row{
+        flex-direction: column;
+    }
+    &__order{
+        order: 1;
+    }
+    &__content{
+        order: 2;
+    }
+    &__form{
+        padding: 20px 55px;
+        margin: 0 -35px;
+        align-items: center;
+        &-name{
+            line-height: 60px !important;
+        }
+    }
+    &__input{
+        width: 400px;
+        line-height: 60px !important;
+        &-btn{
+            line-height: 80px !important;
+            margin-top: 23px;
+        }
+    }
+}
+.navbar{
+    display: none;
+    &__content{
+        flex-direction: column;
+        align-items: center;
+    }
+    &__content{
+        padding-top: 0px !important;
+        &-heading{
+            font-size: 60px!important;
+            line-height: 75px!important;
+            margin: 20px 0;
+            & span{
+                font-size: 60px !important;
+                line-height: 75px !important;
+                }
+        }
+        &-info{
+            margin: 20px 0;
+        }
+    }
+}
+.advantages{
+    &__head{
+        padding-top: 50px;
+    }
+    &__body{
+        flex-direction: column;
+        align-items: center;
+    }
+    &__img{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    &__content{
+        padding-left: 0;
+    }
+    &__item{
+        &-info{
+            padding-bottom: 60px;
+        }
+        &-info{
+            padding-bottom: 60px;
+        }
+    }
+}
+@media (max-width: 768px) { 
+    .price{
+        &__content{
+            &-head{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+        &__body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 667px) { 
+    .navbar{
+        &__content{
+            &-heading{
+                font-size: 40px !important;
+                line-height: 60px !important;
+                & span{
+                    font-size: 40px !important; 
+                    line-height: 60px !important;
+                }
+            }
+            &-info{
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) { 
+    .nav{
+        &__input {
+            width: 300px;
+        }
+    }
+    .navbar{
+        &__content{
+            &-heading{
+                font-size: 40px !important;
+                line-height: 50px !important;
+                & span{
+                    font-size: 40px !important; 
+                    line-height: 50px !important;
+                }
+            }
+            &-info{
+                font-size: 20px !important;
+            }
+        }
+    }
+    .advantages{
+        &__head{
+            font-size: 45px;
+        }
+    }
+    .price{
+        &__content{
+            width: 350px;
+        }
+    }
+    .footer{
+        &__row{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__logo{
+            padding-bottom: 50px;
+        }
+    }
+}
+@media (max-width: 375px) { 
+    .advantages{
+        &__head{
+            font-size: 40px;
+        }
+    }
+    .nav{
+        &__input {
+            width: 300px;
+        }
+    }
+    .navbar{
+        &__content{
+            &-heading{
+                font-size: 30px !important;
+                line-height: 40px !important;
+                & span{
+                    font-size: 30px !important; 
+                    line-height: 40px !important;
+                }
+            }
+            &-info{
+                font-size: 18px !important;
+            }
+        }
+    }
 
 }
 
-@media (max-width: 991.98px) { 
+@media (max-width: 320px) { 
+    .advantages{
+        &__head{
+            font-size: 35px;
+        }
+    }
+    .nav{
+        &__input {
+            width: 250px !important;
+        }
+    }
 
- }
+    .navbar{
+        &__content{
+            }
+            &-info{
+                font-size: 16px !important;
+            }
+        }
+    }
 
-@media (max-width: 767.98px) { 
-
- }
-
-@media (max-width: 575.98px) { 
-
- }
+    .price{
+        &__content{
+            width: 300px;
+            &-order{
+                padding: 25px 80px;
+            }
+        }
+    }
+}
