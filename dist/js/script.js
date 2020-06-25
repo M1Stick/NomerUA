@@ -5,6 +5,22 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  $('.header__order').click(function() {
+    $('body').toggleClass('lock');
+  })
+});
+$(document).ready(function() {
+  $('.price__content-order').click(function() {
+    $('body').toggleClass('lock');
+  })
+});
+$(document).ready(function() {
+  $('.header__popup-close').click(function() {
+    $('body').removeClass('lock');
+  })
+});
+
+$(document).ready(function() {
   $('.header__burger').click(function() {
     $('.header__burger').toggleClass('active');
     $('.header__menu').toggleClass('active');
@@ -36,6 +52,7 @@ $(document).ready(function(){
     ]
       });
   });
+
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();

@@ -213,7 +213,19 @@
         }
     }
 }
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
+    .header{
+        &__popup{
+            &-content {
+                width: 644px;
+            } 
+            &-title{
+                & h1{
+                    flex: 0 0 87%;
+                }
+            }
+        }
+    }
     .price{
         &__content{
             &-head{
@@ -231,6 +243,18 @@
     }
 }
 @media (max-width: 667px) { 
+    .header{
+        &__popup{
+            &-content {
+                width: 600px;
+            } 
+            &-title{
+                & h1{
+                    flex: 0 0 92%;
+                }
+            }
+        }
+    }
     .navbar{
         &__content{
             &-heading{
@@ -247,12 +271,48 @@
         }
     }
 }
+@media (max-width: 568px){
+    .header{
+        &__popup{
+            &-content {
+                width: 480px;
+            } 
+            &-title{
+                & h1{
+                    flex: 0 0 86%;
+                }
+            }
+        }
+    }
+    .nav{
+        &__input {
+            &.popup{
+                width: 270px;
+            }
+        }
+    }
+}
 
 
 @media (max-width: 414px) { 
+    .header{
+        &__popup{
+            &-content {
+                width: 380px;
+            } 
+            &-title{
+                & h1{
+                    flex: 0 0 83%;
+                }
+            }
+        }
+    }
     .nav{
         &__input {
             width: 300px;
+            &.popup{
+                width: 270px;
+            }
         }
     }
     .navbar{

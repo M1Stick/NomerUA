@@ -21,7 +21,7 @@
                     </div>
                     <div class="header__connect" id="connect">
                         <a class="header__tel" href="tel:+380999999999">+38 (099) 999 99 99</a>
-                        <a class="header__order" href="#" >Заказать</a>
+                        <a class="header__order" href="#header-popup" >Заказать</a>
                     </div>
                     <nav class="header__menu">
                         <ul class="header__list">
@@ -54,6 +54,23 @@
                     </nav>
                     <div class="header__burger">
                         <span></span>
+                    </div>
+                    <div class="header__popup" id="header-popup">
+                        <div class="header__popup-body">
+                            <div class="header__popup-content">
+                                <div class="header__popup-title">
+                                    <h1>Заявка</h1>
+                                    <a class="header__popup-close" href="#">
+                                        <img class="header__popup-img" src="./img/close.png" alt="close png">
+                                    </a>
+                                </div>
+                                <div class="header__popup-text">
+                                    <input class ="nav__input popup" type="text" id="fname" placeholder="Имя">
+                                    <input class ="nav__input popup" type="tel" id="phone" placeholder="Телефон">
+                                    <input class ="nav__input-btn popup" type="submit" value="Заказать">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,7 +120,7 @@
                             <label class ="nav__form-phone" for="phone">Телефон</label>
                             <input class ="nav__input" type="tel" id="phone" placeholder="Телефон">
                             <label class ="nav__form-numbers" for="numbers">Ваши номера</label>
-                            <input class ="nav__input" type="text" id="numbers" placeholder="Имя">
+                            <input class ="nav__input" type="text" id="numbers" placeholder="Ваши номера">
                             <input class ="nav__input-btn" type="submit" value="Заказать">
                         </form>
                     </div>  
@@ -191,9 +208,26 @@
                                     <p class="price__content-oldprice">399 грн</p>
                                     <p class="price__content-newprice">299 <span>грн</span></p>
                                     <div class="price__content-btn">
-                                        <a class="price__content-order" href="">Заказать</a>
+                                        <a class="price__content-order" href="#price-popup">Заказать</a>
                                     </div>   
                             </div> 
+                            <div class="header__popup" id="price-popup">
+                                <div class="header__popup-body">
+                                    <div class="header__popup-content">
+                                        <div class="header__popup-title">
+                                            <h1>Заявка</h1>
+                                            <a class="header__popup-close" href="#">
+                                                <img class="header__popup-img" src="./img/close.png" alt="close png">
+                                            </a>
+                                        </div>
+                                        <div class="header__popup-text">
+                                            <input class ="nav__input popup" type="text" id="fname" placeholder="Имя">
+                                            <input class ="nav__input popup" type="tel" id="phone" placeholder="Телефон">
+                                            <input class ="nav__input-btn popup" type="submit" value="Заказать">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="price__content">
                             <div class="price__content-head">
@@ -220,7 +254,7 @@
                                 <p class="price__content-oldprice">599 грн</p>
                                 <p class="price__content-newprice">499 <span>грн</span></p>
                                 <div class="price__content-btn">
-                                    <a class="price__content-order" href="">Заказать</a>
+                                    <a class="price__content-order" href="#header-popup">Заказать</a>
                                 </div>   
                             </div> 
                         </div>

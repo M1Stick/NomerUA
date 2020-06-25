@@ -5,6 +5,22 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  $('.header__order').click(function() {
+    $('body').toggleClass('lock');
+  })
+});
+$(document).ready(function() {
+  $('.price__content-order').click(function() {
+    $('body').toggleClass('lock');
+  })
+});
+$(document).ready(function() {
+  $('.header__popup-close').click(function() {
+    $('body').removeClass('lock');
+  })
+});
+
+$(document).ready(function() {
   $('.header__burger').click(function() {
     $('.header__burger').toggleClass('active');
     $('.header__menu').toggleClass('active');
@@ -12,30 +28,8 @@ $(document).ready(function() {
   })
 });
 
-$(document).ready(function(){
-    $('.reviews__slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: Infinity,
-        autoplaySpeed: 2500,
-        adaptiveHeight: true,
-        responsive: [
-	    {
-	      breakpoint: 769,
-	      settings: {
-	        slidesToShow: 2,
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        slidesToShow: 1,
-	      }
-	    }
-    ]
-      });
-  });
+@@include('_slider.js')
+
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
