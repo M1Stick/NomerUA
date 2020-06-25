@@ -28,8 +28,6 @@ $(document).ready(function() {
   })
 });
 
-@@include('_slider.js')
-
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
@@ -43,3 +41,6 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop:0},1000); 
       })  
 });
+
+@@include('_slider.js')
+@@include('_ajax.js')

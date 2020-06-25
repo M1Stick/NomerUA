@@ -704,6 +704,7 @@ body.lock {
 }
 
 .header__order {
+  background: url(../img/car_2.jpg) no-repeat;
   font-family: "FiraSans-Black", sans-serif;
   font-size: 20px;
   line-height: 28px;
@@ -815,7 +816,12 @@ body.lock {
 }
 
 .nav {
-  background: url(../img/car_1.jpg) no-repeat;
+  background: url(../img/car_1.jpg) 0 0/100% no-repeat;
+  background-size: cover;
+}
+
+.nav__container {
+  padding: 0;
 }
 
 .nav__row {
@@ -834,6 +840,8 @@ body.lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+  background: url(../img/car_2.jpg) 0 0/100% no-repeat;
+  background-color: rgba(23, 44, 66, 0.7);
 }
 
 .nav__form {

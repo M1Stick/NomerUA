@@ -74,6 +74,7 @@ body.lock{
         }
     }
     &__order{
+        background: url(../img/car_2.jpg) no-repeat;
         font-family: $firasansb;
         font-size: 20px;
         line-height: 28px;
@@ -149,7 +150,11 @@ body.lock{
 }
 
 .nav {
-    background: url(../img/car_1.jpg) no-repeat;
+    background: url(../img/car_1.jpg) 0 0 / 100% no-repeat;
+    background-size: cover;
+    &__container{
+        padding: 0;
+    }
     &__row{
         display: flex;
     }
@@ -158,6 +163,8 @@ body.lock{
     }
     &__order{
         flex: 0 0 100%;
+        background: url(../img/car_2.jpg) 0 0 / 100% no-repeat;
+        background-color: $background;
     }
     &__form{
         display: flex;
