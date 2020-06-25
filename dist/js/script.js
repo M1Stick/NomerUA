@@ -1,3 +1,17 @@
+$(document).ready(function() {
+    var windowWidth = $(window).width();
+    if(windowWidth <= 1024)
+    $("#connect").remove('.header__connect')
+});
+
+$(document).ready(function() {
+  $('.header__burger').click(function() {
+    $('.header__burger').toggleClass('active');
+    $('.header__menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  })
+});
+
 $(document).ready(function(){
     $('.reviews__slider').slick({
         infinite: true,
