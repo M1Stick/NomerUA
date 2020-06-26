@@ -54,7 +54,8 @@ $(document).ready(function(){
 	    {
 	      breakpoint: 769,
 	      settings: {
-	        slidesToShow: 2,
+			slidesToShow: 2,
+			arrow: false
 	      }
 	    },
 	    {
@@ -66,3 +67,32 @@ $(document).ready(function(){
     ]
       });
   });
+$(document).ready(function(){
+    $('#btn_submit').click(function(){
+
+        var user_name    = $('#name').val();
+        var user_phone = $('#phone').val();
+        var numbers = $('#numbers').val();
+
+        $.ajax({
+            url: "send.php", 
+            type: "post", 
+            data: { 
+                "name":    user_name,
+                "email":   user_email,
+                "phone":   user_phone,
+                "numbers": numbers
+            },
+            error:function(){$("#erconts").html("Произошла ошибка!");}, 
+                            
+            beforeSend: function() {                     
+                $("#erconts").html("Отправляем данные...");                   
+            },                 
+            success: function(result){                     
+                                    
+                $('#erconts').html(result);                     
+                console.log("ntcn");                 
+            }  
+        });
+    });
+});
