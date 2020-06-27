@@ -1,8 +1,8 @@
 <?php
     
-    $name = $_POST["name"];
-    $phone = $_POST["phone"];
-    $numbers = $_POST["numbers"];
+    $name = $_POST["user__name"];
+    $phone = $_POST["user__phone"];
+    $numbers = $_POST["user__numbers"];
 
     
     if($name=="" or $email=="" or $phone=="" or $numbers==""){ 
@@ -11,7 +11,7 @@
 
     else{
         
-        $to = "your_mail@mail.ru"; 
+        $to = "sauronchik26@gmail.ru"; 
         $subject = "Письмо с обратной связи"; 
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/html; charset=utf-8\r\n";

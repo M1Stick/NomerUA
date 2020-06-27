@@ -65,9 +65,11 @@
                                     </a>
                                 </div>
                                 <div class="header__popup-text">
-                                    <input class ="nav__input popup" type="text" id="name" placeholder="Имя">
-                                    <input class ="nav__input popup" type="tel" id="phone" placeholder="Телефон">
-                                    <input class ="nav__input-btn popup" type="submit" value="Заказать" id="btn_submit" href="#popup_2">
+                                    <form class="header__form" action="send.php" method="post">
+                                        <input class ="nav__input popup" type="text" id="name" name="user__name" placeholder="Имя">
+                                        <input class ="nav__input popup" type="tel" id="phone" name="user__phone" placeholder="Телефон">
+                                        <input class ="nav__input-btn popup" type="submit" value="Заказать" id="btn_submit">
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -82,9 +84,11 @@
                                     </a>
                                 </div>
                                 <div class="header__popup-text">
-                                    <input class ="nav__input popup" type="text" id="name" placeholder="Имя">
-                                    <input class ="nav__input popup" type="tel" id="phone" placeholder="Телефон">
-                                    <input class ="nav__input-btn popup" type="submit" value="Заказать" id="btn_submit">
+                                    <form class="header__form" action="send.php" method="post">
+                                        <input class ="nav__input popup" type="text" id="name" name="user__name" placeholder="Имя">
+                                        <input class ="nav__input popup" type="tel" id="phone" name="user__phone" placeholder="Телефон">
+                                        <input class ="nav__input-btn popup" type="submit" value="Заказать" id="btn_submit">
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -131,13 +135,13 @@
                         </div>
                     </div>
                     <div class="nav__order flex-col-2">
-                        <form class = "nav__form" action="" >
-                            <label class ="nav__form-name" for="fname">Ваше имя</label>
-                            <input class ="nav__input" type="text" id="#name" placeholder="Имя">
-                            <label class ="nav__form-phone" for="phone">Телефон</label>
-                            <input class ="nav__input" type="tel" id="#phone" placeholder="Телефон">
-                            <label class ="nav__form-numbers" for="numbers">Ваши номера</label>
-                            <input class ="nav__input" type="text" id="#numbers" placeholder="Ваши номера">
+                        <form class = "nav__form">
+                            <label class ="nav__form-name" id="fname">Ваше имя</label>
+                            <input class ="nav__input" type="text" id="#name" name="user__name" placeholder="Имя">
+                            <label class ="nav__form-phone" id="phone">Телефон</label>
+                            <input class ="nav__input" type="tel" id="#phone" name="user__phone" placeholder="Телефон">
+                            <label class ="nav__form-numbers" id="numbers">Ваши номера</label>
+                            <input class ="nav__input" type="text" id="#numbers" name="user__numbers" placeholder="Ваши номера">
                             <input class ="nav__input-btn" type="submit" value="Заказать" id="#btn_submit">
                         </form>
                     </div>  
@@ -148,7 +152,7 @@
             <div class="container">
                 <div class="advantages__row">
                     <div class="advantages__heading">
-                        <h1 class="advantages__head">Преимущества</h3>
+                        <h1 class="advantages__head">Преимущества</h1>
                     </div>
                     <div class="advantages__body">
                         <div class="advantages__image">
@@ -238,10 +242,12 @@
                                             </a>
                                         </div>
                                         <div class="header__popup-text">
-                                            <input class ="nav__input popup" type="text" id="#name" placeholder="Имя">
-                                            <input class ="nav__input popup" type="tel" id="#phone" placeholder="Телефон">
-                                            <input class ="nav__input popup" type="text" id="#numbers" placeholder="Ваши номера">
-                                            <input class ="nav__input-btn popup" type="submit" value="Заказать" id="#btn_submit">
+                                            <form class="header__form" action="send.php" method="post">
+                                                <input class ="nav__input popup" type="text" id="name" name="user__name" placeholder="Имя">
+                                                <input class ="nav__input popup" type="tel" id="phone" name="user__phone" placeholder="Телефон">
+                                                <input class ="nav__input popup" type="text" id="#numbers" name="user__numbers" placeholder="Ваши номера">
+                                                <input class ="nav__input-btn popup" type="submit" value="Заказать" id="btn_submit">
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -330,7 +336,7 @@
         </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>
